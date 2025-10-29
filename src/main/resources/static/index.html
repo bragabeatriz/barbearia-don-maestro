@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Barbearia Don Maestro — Agendamentos</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="brand">
+      <h1>Barbearia <span>Don Maestro</span></h1>
+      <p class="tag">Elegância, precisão e estilo</p>
+    </div>
+    <nav>
+      <a href="#agendar" class="btn">Agendar</a>
+      <a href="#galeria" class="btn ghost">Galeria</a>
+      <a href="#precos" class="btn ghost">Preços</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="agendar" class="card">
+      <h2>Agende seu horário</h2>
+      <form id="appointmentForm">
+        <div class="row">
+          <label>Nome completo
+            <input type="text" name="clientName" required />
+          </label>
+          <label>Telefone
+            <input type="text" name="phone" required />
+          </label>
+        </div>
+        <div class="row">
+          <label>Serviço
+            <select name="service" required>
+              <option>Corte clássico</option>
+              <option>Barba</option>
+              <option>Barba + Corte</option>
+              <option>Design de sobrancelha</option>
+            </select>
+          </label>
+          <label>Data e hora
+            <input type="datetime-local" name="appointmentAt" required />
+          </label>
+        </div>
+        <label>Observações
+          <textarea name="notes" rows="2"></textarea>
+        </label>
+        <div class="actions">
+          <button type="submit" class="primary">Confirmar</button>
+          <button type="reset" class="ghost">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="lista" class="card">
+      <h2>Próximos agendamentos</h2>
+      <div id="appointmentsList">Carregando...</div>
+    </section>
+
+    <section id="galeria" class="card gallery">
+      <h2>Galeria</h2>
+      <div class="images">
+        <div class="img" style="background-image:url('/img/hero1.jpg')"></div>
+        <div class="img" style="background-image:url('/img/hero2.jpg')"></div>
+        <div class="img" style="background-image:url('/img/hero3.jpg')"></div>
+      </div>
+    </section>
+
+    <section id="precos" class="card prices">
+      <h2>Preços</h2>
+      <ul>
+        <li><strong>Corte clássico</strong> — R$ 45,00</li>
+        <li><strong>Barba</strong> — R$ 25,00</li>
+        <li><strong>Barba + Corte</strong> — R$ 60,00</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Don Maestro — Rua Exemplo, 123 — (11) 99999-0000</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

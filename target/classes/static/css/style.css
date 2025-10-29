@@ -1,0 +1,33 @@
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif}
+:root{
+  --bg:#0a0a0a;
+  --accent:#ffcf33;
+  --muted:#bfbfbf;
+  --card:#111;
+}
+body{background:linear-gradient(180deg,#030303,#0b0b0b);color:var(--muted);margin:0}
+.hero{display:flex;justify-content:space-between;align-items:center;padding:28px 48px;border-bottom:1px solid rgba(255,255,255,0.04)}
+.brand h1{margin:0;font-size:28px;color:var(--accent);letter-spacing:1px}
+.brand h1 span{color:white}
+.brand .tag{color:var(--muted);margin-top:6px;font-size:13px}
+nav .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;margin-left:8px;border-radius:8px;color:var(--muted);text-decoration:none}
+nav .btn.primary{background:var(--accent);color:#111;border:none}
+.container{max-width:1000px;margin:28px auto;padding:0 20px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:12px;margin-bottom:18px;border:1px solid rgba(255,255,255,0.03)}
+.card h2{color:white;margin-top:0}
+.row{display:flex;gap:12px}
+label{display:block;width:100%;color:var(--muted);font-size:14px}
+input,select,textarea{width:100%;padding:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);border-radius:8px;margin-top:6px}
+.actions{display:flex;gap:8px;margin-top:12px}
+button{padding:10px 14px;border-radius:10px;border:none;cursor:pointer}
+button.primary{background:var(--accent);color:#111}
+button.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.gallery .images{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.gallery .img{height:140px;background-size:cover;background-position:center;border-radius:8px;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.3)}
+.prices ul{list-style:none;padding:0;margin:0}
+.prices li{padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.02);color:var(--muted)}
+.footer{text-align:center;padding:18px;color:rgba(255,255,255,0.4)}
+@media(max-width:720px){
+  .row{flex-direction:column}
+  .hero{flex-direction:column;align-items:flex-start;gap:12px}
+}
